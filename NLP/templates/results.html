@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PDF Analysis Results</title>
+</head>
+<body>
+    <h1>분석 결과</h1>
+    <h2>추출된 데이터</h2>
+    <table border="1">
+        <tr>
+            <th>Voltage</th>
+            <th>Temperature</th>
+            <th>Power</th>
+        </tr>
+        {% for param in parameters %}
+        <tr>
+            <td>{{ param.Voltage }}</td>
+            <td>{{ param.Temperature }}</td>
+            <td>{{ param.Power }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    <a href="/">뒤로가기</a>
+</body>
+</html>
